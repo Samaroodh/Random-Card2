@@ -1,1 +1,57 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  width: 200px;
+  height: 300px;
+  border: 4px solid #dfe7fe;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(161, 185, 233);
+  position: relative;
+  font-size: 4em;
+  font-family: cursive;
+}
+body {
+  background: url(https://images.unsplash.com/photo-1599148400620-8e1ff0bf28d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)
+    center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.head,
+.footer {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+}
+.head {
+  top: 10px;
+  left: 10px;
+}
+
+.footer {
+  bottom: 10px;
+  right: 10px;
+  transform: scale(-1, -1);
+}
+.spade .head,
+.spade .footer {
+  background-image: url("//cdn.pixabay.com/photo/2013/07/12/12/01/suit-of-spades-145116__340.png");
+}
+
+.club .head,
+.club .footer {
+  background-image: url("https://static.thenounproject.com/png/753961-200.png");
+}
+
+.diamond .head,
+.diamond .footer {
+  background-image: url("//upload.wikimedia.org/wikipedia/en/thumb/1/1f/Card_diamond.svg/174px-Card_diamond.svg.png");
+}
+
+.heart .head,
+.heart .footer {
+  background-image: url("https://www.freeiconspng.com/thumbs/heart-icon/valentine-heart-icon-6.png");
+}
